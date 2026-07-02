@@ -2791,6 +2791,7 @@ function clearAllBookmarks() {
 }
 
 function setView(next, options = {}) {
+  if (next === "learn") next = "study";
   view = next;
   render();
   if (options.anchor) {
@@ -2882,9 +2883,12 @@ function renderTabs() {
   panels.forEach((name) => {
     els[`${name}View`].hidden = view !== name;
   });
+  els.learnView.hidden = true;
+  els.learnView.setAttribute("aria-hidden", "true");
   els.dashboardTab.classList.toggle("active", view === "dashboard");
   els.studyTab.classList.toggle("active", view === "study");
-  els.learnTab.classList.toggle("active", view === "learn");
+  els.learnTab.hidden = true;
+  els.learnTab.classList.remove("active");
   els.setupTab.classList.toggle("active", view === "setup");
   els.bookmarksTab.classList.toggle("active", view === "bookmarks");
   els.showTab.classList.toggle("active", view === "show");

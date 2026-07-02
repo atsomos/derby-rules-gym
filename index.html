@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roller Derby Rules Gym</title>
-    <link rel="stylesheet" href="styles.css?v=study-smooth-scroll-4">
+    <link rel="stylesheet" href="styles.css?v=nav-polish-2">
   </head>
   <body>
     <main class="app-shell">
@@ -35,25 +35,24 @@
           <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5h7v7H4v-7Zm9 0h7v7h-7v-7Zm-9 9h7v6H4v-6Zm9 0h7v6h-7v-6Z"></path></svg>
           <span>Dashboard</span>
         </button>
-        <button id="bookmarksTab" class="tab-btn" type="button">
-          <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5h10v15l-5-3.3-5 3.3v-15Z"></path></svg>
-          <span>Bookmarks</span>
-        </button>
         <button id="studyTab" class="tab-btn" type="button">
           <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5V4Zm3 3v2h8V7H8Zm0 4v2h8v-2H8Zm0 4v2h5v-2H8Z"></path></svg>
           <span>Study</span>
         </button>
-        <button id="learnTab" class="tab-btn" type="button">
+        <button id="bookmarksTab" class="tab-btn" type="button">
+          <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5h10v15l-5-3.3-5 3.3v-15Z"></path></svg>
+          <span>Bookmarks</span>
+        </button>
+        <button id="learnTab" class="tab-btn" type="button" hidden>
           <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5c2.9 0 5.2.7 7 2.1 1.8-1.4 4.1-2.1 7-2.1v14.3c-2.8 0-5.1.6-7 1.9-1.9-1.3-4.2-1.9-7-1.9V4.5Zm2 2.2v9.9c1.6.2 2.9.5 4 1.1V8.3C10 7.5 8.7 7 7 6.7Zm10 0c-1.7.3-3 .8-4 1.6v9.4c1.1-.6 2.4-.9 4-1.1V6.7Z"></path></svg>
           <span>Themes</span>
         </button>
-        <button id="showTab" class="tab-btn lock-tab" type="button">
+        <button id="showTab" class="tab-btn lock-tab tertiary-tab" type="button">
           <svg id="showTabIcon" class="tab-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M7 10V8a5 5 0 0 1 10 0v2h1.5v10h-13V10H7Zm2 0h6V8a3 3 0 0 0-6 0v2Z"></path>
           </svg>
           <span>Questions</span>
         </button>
-        <span class="tab-separator" aria-hidden="true"></span>
         <button id="setupTab" class="tab-btn primary-tab" type="button">
           <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6V5Z"></path></svg>
           <span>New test</span>
@@ -318,7 +317,7 @@
         </div>
       </section>
 
-      <section id="learnView" class="view-panel learn-panel" hidden>
+      <section id="learnView" class="view-panel learn-panel" hidden aria-hidden="true">
         <div class="setup-copy">
           <h2>Themes</h2>
           <p>Build from the calls that show up constantly, then add complexity only when the core patterns are steady.</p>
@@ -472,6 +471,6 @@
     </main>
 
     <script src="official-cases.js"></script>
-    <script src="app.js?v=study-smooth-scroll-4"></script>
+    <script src="app.js?v=nav-polish-2"></script>
   </body>
 </html>

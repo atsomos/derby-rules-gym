@@ -201,8 +201,7 @@ body[data-view="test"] .view-tabs {
   display: none;
 }
 
-body[data-view="learn"] #setupTab,
-body[data-view="learn"] .tab-separator {
+body[data-view="learn"] #setupTab {
   display: none;
 }
 
@@ -281,13 +280,6 @@ a.ghost-btn {
   font-weight: 900;
 }
 
-.tab-separator {
-  width: 1px;
-  height: 34px;
-  margin-left: auto;
-  background: var(--line-strong);
-}
-
 .tab-icon {
   width: 17px;
   height: 17px;
@@ -305,6 +297,7 @@ a.ghost-btn {
 
 .primary-tab,
 .primary-tab.active {
+  margin-left: auto;
   border-color: #f5b7d6;
   background: #f3bfd8;
   color: #160a12;
@@ -314,6 +307,23 @@ a.ghost-btn {
 .primary-tab:hover {
   background: #ffd2e6;
   color: #12070f;
+}
+
+.tertiary-tab,
+.tertiary-tab.active {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  color: var(--muted);
+}
+
+.tertiary-tab:hover,
+.tertiary-tab:focus-visible,
+.tertiary-tab:active {
+  border-color: transparent;
+  background: rgba(235, 165, 200, 0.08);
+  box-shadow: none;
+  color: var(--accent-dark);
 }
 
 .primary-btn {
@@ -2174,13 +2184,11 @@ a.ghost-btn {
     scroll-snap-align: start;
   }
 
-  #dashboardTab {
-    order: -2;
-  }
-
-  #setupTab {
-    order: -1;
-  }
+  #dashboardTab { order: 1; }
+  #studyTab { order: 2; }
+  #bookmarksTab { order: 3; }
+  #showTab { order: 4; }
+  #setupTab { order: 5; }
 
   .score-pill {
     width: 100%;
@@ -2203,10 +2211,6 @@ a.ghost-btn {
   .principle-grid,
   .role-list {
     grid-template-columns: 1fr;
-  }
-
-  .tab-separator {
-    display: none;
   }
 
   .study-layout {
