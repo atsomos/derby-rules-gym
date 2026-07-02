@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roller Derby Rules Gym</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=study-smooth-scroll-4">
   </head>
   <body>
     <main class="app-shell">
@@ -117,7 +117,11 @@
           <div class="study-hero-copy">
             <p class="eyebrow">Player-first rulebook</p>
             <h2>Derby Rules From Zero</h2>
-            <p>This guide teaches the game in the order a new player needs it: what is happening, why it matters, then where the official WFTDA rules and casebook get precise.</p>
+            <p>This guide teaches the game in the order a new player needs it: first what is happening on track, then what decision to make, then where the official WFTDA rules get precise.</p>
+            <div class="study-jump-row" aria-label="Study shortcuts">
+              <button type="button" data-study-anchor="study-start">Start learning</button>
+              <button type="button" data-study-anchor="study-practice-map">Practice map</button>
+            </div>
           </div>
           <div class="jam-timeline" aria-label="Jam timeline">
             <span>Line up</span>
@@ -142,102 +146,110 @@
 
         <div class="study-layout">
           <aside class="study-sidebar" aria-label="Study sections">
-            <a href="#study-start">Start here</a>
-            <a href="#study-jam">The jam</a>
-            <a href="#study-roles">Who is who</a>
-            <a href="#study-pack">The Pack</a>
-            <a href="#study-scoring">Scoring</a>
-            <a href="#study-contact">Legal contact</a>
-            <a href="#study-penalties">Penalties</a>
-            <a href="#study-common">Common situations</a>
-            <a href="#study-star-pass">Star Pass</a>
-            <a href="#study-box">Penalty Box</a>
-            <a href="#study-later">Later</a>
-            <a href="#study-sources">Sources</a>
+            <button type="button" data-study-anchor="study-start">Start here</button>
+            <button type="button" data-study-anchor="study-practice-map">Practice map</button>
+            <button type="button" data-study-anchor="study-jam">The jam</button>
+            <button type="button" data-study-anchor="study-roles">Who is who</button>
+            <button type="button" data-study-anchor="study-pack">The Pack</button>
+            <button type="button" data-study-anchor="study-scoring">Scoring</button>
+            <button type="button" data-study-anchor="study-contact">Legal contact</button>
+            <button type="button" data-study-anchor="study-penalties">Penalties</button>
+            <button type="button" data-study-anchor="study-common">Common situations</button>
+            <button type="button" data-study-anchor="study-star-pass">Star Pass</button>
+            <button type="button" data-study-anchor="study-box">Penalty Box</button>
+            <button type="button" data-study-anchor="study-later">Later</button>
+            <button type="button" data-study-anchor="study-sources">Sources</button>
           </aside>
 
           <div class="study-content">
             <section id="study-start" class="study-section">
               <p class="module-level">Start here</p>
               <h3>The game in one breath</h3>
-              <p>Each team fields Blockers and one Jammer. Jammers score by passing opposing Blockers. Blockers try to stop the opposing Jammer and help their own Jammer, while staying close enough to the Pack for normal play to be legal.</p>
+              <p>Each team fields Blockers and one Jammer. The Jammer scores by passing opposing Blockers. The Blockers stop the other Jammer, help their own Jammer, and stay close enough to the Pack for normal play to be legal.</p>
               <div class="principle-grid">
-                <article><strong>Score by passing</strong><span>The Jammer earns points by legally passing opponents on scoring trips.</span></article>
-                <article><strong>The Pack matters</strong><span>Most blocking rules depend on where the Pack is and who is in play.</span></article>
-                <article><strong>Penalties protect the game</strong><span>Most calls punish unsafe contact, illegal position, unfair advantage, or ignoring game structure.</span></article>
+                <article><strong>Score by passing</strong><span>Points come from legal passes on scoring trips, not from the first trip through the Pack.</span></article>
+                <article><strong>The Pack matters</strong><span>The Pack tells you where most blocking is legal and who is close enough to keep playing.</span></article>
+                <article><strong>Penalties protect the game</strong><span>Most calls are about unsafe contact, illegal position, unfair advantage, or broken game structure.</span></article>
               </div>
+              <div class="study-layers" data-study-layers="start"></div>
             </section>
 
             <section id="study-jam" class="study-section">
               <p class="module-level">First mental model</p>
               <h3>The shape of a jam</h3>
-              <p>A jam is the small unit of derby. Skaters line up, the whistle starts play, Jammers fight through the Pack on an initial trip, one may become Lead, then scoring begins on later trips.</p>
+              <p>A jam is one short burst of derby. Skaters line up, the whistle starts play, Jammers fight through the Pack on an initial trip, one may become Lead, and scoring begins on later trips.</p>
               <ol class="study-steps">
                 <li><strong>Line up.</strong> Blockers and Jammers start in legal places.</li>
-                <li><strong>Initial trip.</strong> Jammers try to pass the Pack for position and Lead eligibility.</li>
-                <li><strong>Lead Jammer.</strong> The first eligible Jammer may gain the power to end the jam early.</li>
-                <li><strong>Scoring trips.</strong> Jammers earn points by passing opponents.</li>
+                <li><strong>Initial trip.</strong> Jammers try to pass the Pack for position and Lead eligibility, not points.</li>
+                <li><strong>Lead Jammer.</strong> The eligible Jammer who earns Lead can end the jam early.</li>
+                <li><strong>Scoring trips.</strong> Jammers earn points by legally passing opponents.</li>
                 <li><strong>Jam ends.</strong> It ends by call-off, time, or official action.</li>
               </ol>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="jam">Practice jam flow</button>
+              <div class="study-layers" data-study-layers="jam"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="jam">Start jam flow practice</button>
             </section>
 
             <section id="study-roles" class="study-section">
               <p class="module-level">People on track</p>
               <h3>Who is who</h3>
-              <p>The Star marks the Jammer. The Stripe marks the Pivot. Everybody else on track is a Blocker. Learn helmet covers early, because many weird cases are really questions about who has which role at a specific moment.</p>
+              <p>The Star marks the Jammer. The Stripe marks the Pivot. Everybody else on track is a Blocker. Learn the helmet covers early, because many weird cases are really questions about who had which role at one exact moment.</p>
               <div class="role-list">
-                <span><strong>Jammer</strong> scores points and may earn Lead.</span>
-                <span><strong>Pivot</strong> is a Blocker who can receive the Star.</span>
+                <span><strong>Jammer</strong> can score points and may earn Lead.</span>
+                <span><strong>Pivot</strong> is still a Blocker, but can receive the Star.</span>
                 <span><strong>Blockers</strong> form the Pack, block, assist, and control space.</span>
               </div>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="roles">Practice roles</button>
+              <div class="study-layers" data-study-layers="roles"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="roles">Start roles practice</button>
             </section>
 
             <section id="study-pack" class="study-section">
               <p class="module-level">The hard idea</p>
               <h3>The Pack</h3>
-              <p>The Pack is the largest group of in-bounds Blockers from both teams skating near each other. It creates the Engagement Zone, which controls where most blocking can happen. If you understand the Pack, many penalties stop feeling random.</p>
+              <p>The Pack is the largest group of in-bounds Blockers from both teams who are close enough to each other. It creates the Engagement Zone, which controls where most blocking can happen. Once you can find the Pack, many penalties stop feeling random.</p>
               <div class="plain-rule">
                 <strong>Player version</strong>
-                <span>Stay near the Pack, reform it when it breaks, and do not use distance to trap opponents into illegal play.</span>
+                <span>Stay near the Pack, reform it when it breaks, and do not use distance as a trick to trap opponents into illegal play.</span>
               </div>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="pack">Practice Pack rules</button>
+              <div class="study-layers" data-study-layers="pack"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="pack">Start Pack practice</button>
             </section>
 
             <section id="study-scoring" class="study-section">
               <p class="module-level">How points happen</p>
               <h3>Scoring</h3>
-              <p>The initial trip gets the Jammer through the Pack but does not score. On scoring trips, points come from earned passes on opposing Blockers. Hips, in-bounds status, trips, and unavailable opponents are the details that make scoring cases tricky.</p>
+              <p>The initial trip gets the Jammer through the Pack but does not score. On scoring trips, points come from earned passes on opposing Blockers. Hips, boundary status, trip status, and unavailable opponents are the details that make scoring cases tricky.</p>
               <ul class="study-list">
                 <li>The first trip is for position and Lead, not points.</li>
-                <li>A scoring pass is about legally gaining superior position.</li>
-                <li>Not-on-the-track points exist so teams cannot avoid being scored on by leaving play.</li>
+                <li>A scoring pass is about legally gaining superior position, usually with the hips ahead.</li>
+                <li>Not-on-the-track points exist so teams cannot avoid points by leaving play.</li>
               </ul>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="scoring">Practice scoring</button>
+              <div class="study-layers" data-study-layers="scoring"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="scoring">Start scoring practice</button>
             </section>
 
             <section id="study-contact" class="study-section">
               <p class="module-level">Legal before illegal</p>
               <h3>Legal contact</h3>
-              <p>Derby is a contact sport, not a no-touch maze. Start by learning what is legal: legal target zones, legal blocking zones, positional blocking, and assists. Penalties make more sense after that baseline is clear.</p>
+              <p>Derby is a contact sport, not a no-touch maze. Start by learning what legal contact looks like: legal targets, legal blocking zones, positional blocking, and assists. Penalties make more sense after that baseline is clear.</p>
               <div class="plain-rule">
                 <strong>Player version</strong>
-                <span>Use legal body parts, hit legal body parts, stay in play, and create meaningful impact legally.</span>
+                <span>Use legal body parts, hit legal body parts, stay in play, and make your impact legally.</span>
               </div>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="contact">Practice contact</button>
+              <div class="study-layers" data-study-layers="contact"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="contact">Start contact practice</button>
             </section>
 
             <section id="study-penalties" class="study-section">
               <p class="module-level">Why calls exist</p>
               <h3>Penalties by player intuition</h3>
-              <p>Instead of memorizing the official taxonomy first, group penalties by what they prevent.</p>
+              <p>Instead of memorizing the official taxonomy first, group penalties by what they are trying to prevent.</p>
               <div class="principle-grid">
-                <article><strong>Unsafe contact</strong><span>Back blocks, low blocks, forearms, illegal target zones, illegal blocking zones.</span></article>
-                <article><strong>Illegal position</strong><span>Out of play blocks, failure to reform, illegal re-entry, cutting.</span></article>
-                <article><strong>Game structure</strong><span>False starts, too many skaters, illegal procedures, ignoring officials.</span></article>
+                <article><strong>Unsafe contact</strong><span>Hits to illegal places, hits with illegal body parts, or contact that creates unsafe impact.</span></article>
+                <article><strong>Illegal position</strong><span>Blocking out of play, failing to reform, re-entering illegally, or cutting the track.</span></article>
+                <article><strong>Game structure</strong><span>False starts, too many skaters, illegal procedures, or ignoring official instructions.</span></article>
               </div>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="penalties">Practice penalties</button>
+              <div class="study-layers" data-study-layers="penalties"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="penalties">Start penalties practice</button>
             </section>
 
             <section id="study-common" class="study-section">
@@ -251,27 +263,45 @@
                 <span>Am I out of play?</span>
                 <span>Do I need to yield?</span>
               </div>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="common">Practice common situations</button>
+              <div class="study-layers" data-study-layers="common"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="common">Start common situations practice</button>
             </section>
 
             <section id="study-star-pass" class="study-section">
               <p class="module-level">Role changes</p>
               <h3>Star Pass</h3>
-              <p>The Star Pass is simple at the center and weird at the edges. The Jammer can pass the Star to the Pivot, but visibility, control, release timing, and who is legally the Pivot all matter.</p>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="star">Practice Star Pass</button>
+              <p>The Star Pass is simple at the center and weird at the edges. The Jammer can pass the Star to the Pivot, but the real question is exactly when the Pivot legally becomes the new Jammer.</p>
+              <div class="study-layers" data-study-layers="star"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="star">Start Star Pass practice</button>
             </section>
 
             <section id="study-box" class="study-section">
               <p class="module-level">Serving time</p>
               <h3>Penalty Box</h3>
-              <p>For players, the useful version is: leave legally, report, sit, serve, return legally. Jammer penalties and substitutions add nuance later, but basic Box behavior should be learned early.</p>
-              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="box">Practice Penalty Box</button>
+              <p>For players, the useful version is: leave legally, report, sit, serve, return legally. Jammer penalties and substitutions add nuance later, but basic Box behavior should become automatic early.</p>
+              <div class="study-layers" data-study-layers="box"></div>
+              <button class="ghost-btn study-practice-btn" type="button" data-study-practice="box">Start Penalty Box practice</button>
             </section>
 
             <section id="study-later" class="study-section">
               <p class="module-level">Not day one</p>
               <h3>Weird stuff later</h3>
-              <p>Official reviews, expulsions, simultaneous Jammer penalties, substitute serving, and Star Pass edge cases matter, but they should not be the first layer. Put them here so beginners know they exist without feeling buried by them.</p>
+              <p>Official reviews, expulsions, simultaneous Jammer penalties, substitute serving, and Star Pass edge cases matter, but they should not be the first layer. Keep them here so beginners know they exist without being buried by them.</p>
+              <div class="study-layers" data-study-layers="later"></div>
+            </section>
+
+            <section id="study-practice-map" class="study-section study-checkpoints" aria-labelledby="studyPracticeTitle">
+              <div class="study-checkpoint-intro">
+                <p class="module-level">Practice map</p>
+                <h3 id="studyPracticeTitle">Turn reading into reps</h3>
+                <p>Each set gives you questions that match the topic you just studied, so reading turns into recall instead of passive scrolling.</p>
+              </div>
+              <div class="study-method" aria-label="Study method">
+                <span><strong>Read</strong> Start with the player version.</span>
+                <span><strong>Predict</strong> Answer the check before opening the next layer.</span>
+                <span><strong>Apply</strong> Use the example, then try questions.</span>
+              </div>
+              <div id="studyPracticeRoot" class="study-card-grid" aria-live="polite"></div>
             </section>
 
             <section id="study-sources" class="study-section sources-section">
@@ -279,9 +309,9 @@
               <h3>Official sources</h3>
               <p>This guide is a learning map. The WFTDA rules and casebook remain the authority.</p>
               <div class="source-row">
-                <a href="https://rules.wftda.com/summary.html" target="_blank" rel="noreferrer">Rules summary</a>
-                <a href="https://rules.wftda.com/index.html" target="_blank" rel="noreferrer">Rulebook</a>
-                <a href="https://rules.wftda.com/casebook/index.html" target="_blank" rel="noreferrer">Casebook</a>
+                <a class="external-link" href="https://rules.wftda.com/summary.html" target="_blank" rel="noreferrer" aria-label="Rules summary, opens external site">Rules summary</a>
+                <a class="external-link" href="https://rules.wftda.com/index.html" target="_blank" rel="noreferrer" aria-label="Rulebook, opens external site">Rulebook</a>
+                <a class="external-link" href="https://rules.wftda.com/casebook/index.html" target="_blank" rel="noreferrer" aria-label="Casebook, opens external site">Casebook</a>
               </div>
             </section>
           </div>
@@ -351,8 +381,8 @@
             </div>
           </nav>
           <div class="source-row compact">
-            <a id="caseLink" href="#" target="_blank" rel="noreferrer">Casebook</a>
-            <a id="ruleLink" href="#" target="_blank" rel="noreferrer">Rulebook</a>
+            <a id="caseLink" class="external-link" href="#" target="_blank" rel="noreferrer" aria-label="Casebook, opens external site">Casebook</a>
+            <a id="ruleLink" class="external-link" href="#" target="_blank" rel="noreferrer" aria-label="Rulebook, opens external site">Rulebook</a>
           </div>
         </article>
       </section>
@@ -381,7 +411,7 @@
             <h2>Question Bank</h2>
             <p>Open the connected Google Sheet to review question text, correct answers, wrong answers, rationales, and source links.</p>
             <div class="sheet-actions">
-              <a class="sheet-link ghost-btn" href="https://docs.google.com/spreadsheets/d/1hSOySUSkpAX9lzQWGN522ALPFuJnTkZbj0Qp1BJi44k/edit?usp=drivesdk" target="_blank" rel="noreferrer">
+              <a class="sheet-link ghost-btn external-link" href="https://docs.google.com/spreadsheets/d/1hSOySUSkpAX9lzQWGN522ALPFuJnTkZbj0Qp1BJi44k/edit?usp=drivesdk" target="_blank" rel="noreferrer" aria-label="Open Google Sheet, opens external site">
                 <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5V4Zm2 2v3h10V6H7Zm0 5v3h4v-3H7Zm6 0v3h4v-3h-4Zm-6 5v2h4v-2H7Zm6 0v2h4v-2h-4Z"></path></svg>
                 <span>Open Google Sheet</span>
               </a>
@@ -399,9 +429,9 @@
       <footer class="site-foot">
         <p>Built from the official WFTDA casebook and rulebook, checked June 11, 2026.</p>
         <p>
-          <a href="https://rules.wftda.com/casebook/index.html" target="_blank" rel="noreferrer">WFTDA Casebook</a>
+          <a class="external-link" href="https://rules.wftda.com/casebook/index.html" target="_blank" rel="noreferrer" aria-label="WFTDA Casebook, opens external site">WFTDA Casebook</a>
           <span aria-hidden="true">|</span>
-          <a href="https://rules.wftda.com/index.html" target="_blank" rel="noreferrer">WFTDA Rulebook</a>
+          <a class="external-link" href="https://rules.wftda.com/index.html" target="_blank" rel="noreferrer" aria-label="WFTDA Rulebook, opens external site">WFTDA Rulebook</a>
         </p>
       </footer>
 
@@ -427,9 +457,21 @@
         </form>
       </dialog>
 
+      <dialog id="studyDepthDialog" class="study-depth-dialog">
+        <form method="dialog">
+          <button id="closeStudyDepthBtn" class="bookmark-btn study-depth-close" type="button" aria-label="Close deep dive" title="Close">
+            <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6.4 5 5.6 5.6L17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5Z"></path></svg>
+          </button>
+          <p id="studyDepthLevel" class="module-level"></p>
+          <h2 id="studyDepthTitle"></h2>
+          <div id="studyDepthBody" class="study-depth-body"></div>
+          <div id="studyDepthLinks" class="source-row compact"></div>
+        </form>
+      </dialog>
+
     </main>
 
     <script src="official-cases.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=study-smooth-scroll-4"></script>
   </body>
 </html>
